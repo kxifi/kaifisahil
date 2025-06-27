@@ -63,3 +63,8 @@ parcel-cache/
 .AppleDouble
 .LSOverride
 Icon?
+
+# Ignore specific files
+sample.html
+gameplan.md
+blog.html
