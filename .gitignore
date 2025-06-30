@@ -55,10 +55,6 @@ parcel-cache/
 *.jsx
 *.jsx.map
 
-# Optional: ignore CSS if using a preprocessor (like SCSS)
-*.css
-*.css.map
-
 # Mac system files
 .AppleDouble
 .LSOverride
