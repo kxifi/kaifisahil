@@ -61,11 +61,4 @@ parcel-cache/
 Icon?
 
 # Ignore specific files
-bkgimage.jpg
-blog.html
-check.jpg
-gameplan.md
-index.css
-index.html
-blob.html
-kaifisahil.jpg
+portfolio/test/
