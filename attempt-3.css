@@ -3,6 +3,10 @@ body{
     font-size: 16px;
 }
 
+a:visited{
+    color:brown;
+}
+
 a:hover{
     color: white;
 }
@@ -10,9 +14,11 @@ a:hover{
 .logo{
     font-size: x-large;
     font-weight: bold;
+    font-style: italic;
 }
 
 .container{
+    background-position: center;
     background-image: 'pictures/swiss-alps.jpg';
     display: flex;
     justify-content: center;
