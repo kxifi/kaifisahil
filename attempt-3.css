@@ -1,0 +1,27 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+a:hover{
+    color: white;
+}
+
+.logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container{
+    background-image: 'pictures/swiss-alps.jpg';
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: left;
+    align-items: center;
+}
