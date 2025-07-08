@@ -13,12 +13,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     min-height: 100vh;
-    background: linear-gradient(135deg, #9c8772 0%, #b5a088 25%, #c9b393 50%, #dcc7a4 75%, #f2e7d5 100%);
-}
-
-.logo{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    background: linear-gradient(135deg, #6f5643 0%, #8b7355 25%, #a68b5b 50%, #c4a373 75%, #e8dcc0 100%);
 }
 
 .first-half{
@@ -44,18 +39,26 @@ a:hover{
 .profile-card{
     display: flex;
     color:whitesmoke;
-    width:300px;
-    height: 400px;
+    width:400px;
+    height: 500px;
     border: 5px bisque solid;
     border-radius: 25px;
     flex-direction: column;
     text-align: left;
     padding: 25px;
     justify-content: end;
-    background-image: url("pictures/20241207_234550.jpg");
+    background-image: url("pictures/kxifi.jpg");
     background-size: cover;
 }
 
+.profile-card:hover {
+    transform: translateY(-5px) rotate(-1deg);
+    box-shadow: 
+        inset 0 1px 3px rgba(255, 255, 255, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.15),
+        0 15px 45px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
 .name{
     font-size: xx-large;
 }
@@ -73,20 +76,4 @@ a:hover{
 
 .item-bio{
     line-height: 2em;
-}
-
-.personal-bio{
-    padding: 20px;
-    height: 400px;
-    width:300px;
-    display: flex;
-    line-height:2.25em;
-    align-items:flex-start;
-    justify-content: center;
-    border: 5px bisque solid;
-    border-radius: 25px;
-    align-self: flex-start;
-    text-align: left;
-    flex-direction: column;
-    background-color: beige;
 }
