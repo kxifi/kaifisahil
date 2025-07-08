@@ -12,13 +12,21 @@ box-sizing: border-box;
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #9c8772 0%, #b5a088 25%, #c9b393 50%, #dcc7a4 75%, #f2e7d5 100%);
+}
+
+.logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 .first-half{
-    background-image:url('pictures/wp5759818-autumn-warmth-wallpapers.jpg');
+    padding: 20px; 
     height:800px; background-size:cover;
     display:flex; justify-content: center;
-    align-items: flex-end; position:relative; justify-content: center;
+    align-items: center; position:relative; justify-content: center;
+    justify-content: space-evenly;
 }
 
 a{
@@ -38,7 +46,7 @@ a:hover{
     color:whitesmoke;
     width:300px;
     height: 400px;
-    border: 5px #CC5500 solid;
+    border: 5px bisque solid;
     border-radius: 25px;
     flex-direction: column;
     text-align: left;
@@ -65,4 +73,20 @@ a:hover{
 
 .item-bio{
     line-height: 2em;
+}
+
+.personal-bio{
+    padding: 20px;
+    height: 400px;
+    width:300px;
+    display: flex;
+    line-height:2.25em;
+    align-items:flex-start;
+    justify-content: center;
+    border: 5px bisque solid;
+    border-radius: 25px;
+    align-self: flex-start;
+    text-align: left;
+    flex-direction: column;
+    background-color: beige;
 }
