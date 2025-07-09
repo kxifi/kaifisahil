@@ -77,3 +77,11 @@ a:hover{
 .item-bio{
     line-height: 2em;
 }
+
+ul.icons{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 400px;
+    justify-content: space-around;
+}
