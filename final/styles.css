@@ -105,6 +105,6 @@ ul.icons{
     display: flex;
     flex-direction: column;
     list-style: none;
-    height: 350px;
+    height: 450px;
     justify-content: space-around;
 }
