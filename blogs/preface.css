@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+a{
+    color:lightskyblue;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: skyblue;
+}
+
+body{
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background: #F5ECD8;
+    margin: 50px;
+}
+
