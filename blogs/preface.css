@@ -19,33 +19,24 @@ a:visited{
     color: gray;
 }
 
-a:hover{
-    color: skyblue;
-}
-
 .container{
-    
-}
-
-.title{
-
-}
-
-.metadata{
-
+    margin: 100px;
+    padding: 50px;
+    margin-top: 125px;
+    min-width: 70vh;
 }
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: #FEFCF8;
     color: #3A3A3A;
-    margin: 100px;
-    padding: 100px;
-    margin-top: 40px;
-    padding-top: 40px;
 }
 
 #main-footer{
     text-align: center;
+}
+
+.metadata{
+    text-align: right;
 }
 
