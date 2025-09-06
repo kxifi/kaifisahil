@@ -20,8 +20,8 @@ a:visited{
 }
 
 .container{
-    margin: auto;
-    padding: auto;
+    margin: 100px;
+    padding: 50px;
     margin-top: 125px;
     min-width: 70vh;
 }
@@ -32,11 +32,15 @@ body{
     color: #3A3A3A;
 }
 
-#main-footer{
-    text-align: center;
+header.logo{
+    display: flex;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+    color: red;
 }
 
-.metadata{
-    text-align: right;
+#main-footer{
+    text-align: center;
 }
 
