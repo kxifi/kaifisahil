@@ -20,8 +20,8 @@ a:visited{
 }
 
 .container{
-    margin: 100px;
-    padding: 50px;
+    margin: auto;
+    padding: auto;
     margin-top: 125px;
     min-width: 70vh;
 }
