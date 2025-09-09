@@ -12,6 +12,7 @@ box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: #FEFCF8;
     color: #3A3A3A;
+    min-width:50vh;
 }
 
 section.articles{
