@@ -26,9 +26,13 @@ body{
 
 .first-half{
     padding: 20px; 
-    height:800px; background-size:cover;
-    display:flex; justify-content: center;
-    align-items: center; position:relative; justify-content: center;
+    height:800px;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    position:relative; 
+    justify-content: center;
     justify-content: space-evenly;
 }
 
@@ -47,7 +51,7 @@ a:hover{
 .profile-card{
     display: flex;
     color:whitesmoke;
-    width:400px;
+    width: 400px;
     height: 500px;
     border: 5px bisque solid;
     border-radius: 25px;
