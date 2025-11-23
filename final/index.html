@@ -1,52 +1,202 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <html lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Kaifi (@kaifisahil)
-        </title>
-        <style>
-            ion-icon{
-                font-size: xx-large;
-            }
-        </style>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-
-    <div class="first-half">
-    <div class="profile-card">
-        <div class="name">Kaifi<span class="verified-twitter" title="Verified">
-  <svg width="27.5" height="27.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Starburst shape -->
-    <path fill="#1DA1F2" d="M10.521 2.624c.793-.871 2.164-.871 2.957 0l1.02 1.12c.4.441.976.68 1.571.652l1.514-.07c1.177-.055 2.147.914 2.093 2.091l-.07 1.514c-.028.595.19 1.171.632 1.571l1.02 1.02c.871.793.871 2.164 0 2.957l-1.12 1.02c-.441.4-.68.976-.652 1.571l.07 1.514c.055 1.177-.914 2.147-2.091 2.093l-1.514-.07c-.595-.028-1.171.19-1.571.632l-1.02 1.02c-.793.871-2.164.871-2.957 0l-1.02-1.12c-.4-.441-.976-.68-1.571-.652l-1.514.07c-1.177.055-2.147-.914-2.093-2.091l.07-1.514c.028-.595-.19-1.171-.632-1.571l-1.02-1.02c-.871-.793-.871-2.164 0-2.957l1.12-1.02c.441-.4.68-.976.652-1.571l-.07-1.514c-.055-1.177.914-2.147 2.091-2.093l1.514.07c.595.028 1.171-.19 1.571-.632l1.02-1.02z"/>
+    <title>@kaifisahil</title>
     
-    <!-- Refined checkmark from Twitter -->
-    <path d="M10.5 13.5L8.5 11.5L7.75 12.25L10.5 15L16.25 9.25L15.5 8.5L10.5 13.5Z"
-          fill="white"/>
-  </svg>
-</span>
-</div>
-        <div class="username"><a href="https://kaifisahil.netlify.app">@kaifisahil</a></div>
-        <div class="item-bio">sapere aude. 🕊️</div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        /* --- RESET & BASICS --- */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            min-height: 100vh;
+            /* The original earthy gradient */
+            background: linear-gradient(to bottom right, #c9a066, #8b5e3c, #4b2e2b);
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffe4b5; /* Moccasin-ish gold for hover */
+        }
+
+        /* --- MAIN LAYOUT CONTAINER --- */
+        .main-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* --- PROFILE CARD --- */
+        .profile-card {
+            position: relative;
+            width: 375px;
+            height: 535px;
+            border: 4px solid rgba(255, 228, 196, 0.6); /* Bisque with transparency */
+            border-radius: 25px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+            /* Placeholder image used here. Replace URL with 'kxifi.jpg' */
+            background: url('kaifisahil.jpg');
+            background-size: cover;
+            background-position: center;
+            
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            transition: all 0.4s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.6);
+            border-color: #ffe4b5;
+        }
+
+        /* Typography inside card */
+        .name-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-size: 2rem; /* approx xx-large */
+            font-weight:lighter;
+            line-height: 1;
+        }
+
+        .username {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 7.5px;
+        }
+
+        .item-bio {
+            font-size: 1.1rem;
+            font-style: italic;
+            line-height: 1.25;
+        }
+
+        /* Verified Badge styling */
+        .verified-twitter svg {
+            width: 24px;
+            height: 24px;
+            display: block; /* Removes hidden vertical spacing */
+        }
+
+        /* --- SOCIAL ICONS BAR --- */
+        ul.icons {
+            list-style: none;
+            display: flex;
+            flex-direction: column; /* Vertical list by default */
+            gap: 25px;
+            background: rgba(0, 0, 0, 0.2); /* Subtle backing for icons */
+            padding: 20px 15px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+        }
+
+        ion-icon {
+            font-size: 1.8rem;
+            display: block; /* Fixes vertical align issues */
+            transition: transform 0.2s ease;
+        }
+
+        ul.icons li a:hover ion-icon {
+            transform: scale(1.2);
+            color: #ffe4b5;
+        }
+
+        /* --- MOBILE RESPONSIVENESS --- */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column; /* Stack card on top of icons */
+            }
+
+            .profile-card {
+                width: 100%;
+                max-width: 340px;
+            }
+
+            ul.icons {
+                flex-direction: row; /* Horizontal icons on mobile */
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                max-width: 340px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="profile-card">
+            <div class="text-content">
+                <div class="name-wrapper">
+                    <span class="name">Kaifi</span>
+                    <span class="verified-twitter" title="Verified">
+                        <svg width="27.5" height="27.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Starburst shape -->
+                        <path fill="#1DA1F2" d="M10.521 2.624c.793-.871 2.164-.871 2.957 0l1.02 1.12c.4.441.976.68 1.571.652l1.514-.07c1.177-.055 2.147.914 2.093 2.091l-.07 1.514c-.028.595.19 1.171.632 1.571l1.02 1.02c.871.793.871 2.164 0 2.957l-1.12 1.02c-.441.4-.68.976-.652 1.571l.07 1.514c.055 1.177-.914 2.147-2.091 2.093l-1.514-.07c-.595-.028-1.171.19-1.571.632l-1.02 1.02c-.793.871-2.164.871-2.957 0l-1.02-1.12c-.4-.441-.976-.68-1.571-.652l-1.514.07c-1.177.055-2.147-.914-2.093-2.091l.07-1.514c.028-.595-.19-1.171-.632-1.571l-1.02-1.02c-.871-.793-.871-2.164 0-2.957l1.12-1.02c.441-.4.68-.976.652-1.571l-.07-1.514c-.055-1.177.914-2.147 2.091-2.093l1.514.07c.595.028 1.171-.19 1.571-.632l1.02-1.02z"/>
+<!-- Refined checkmark from Twitter -->
+                        <path d="M10.5 13.5L8.5 11.5L7.75 12.25L10.5 15L16.25 9.25L15.5 8.5L10.5 13.5Z"
+                        fill="white"/>
+                        </svg>
+                    </span>
+
+                </div>
+                
+                <div class="username">
+                    <a href="https://kaifisahil.substack.com" target="_blank">@kaifisahil</a>
+                </div>
+                
+                <div class="item-bio">
+                    sapere aude. 🕊️
+                </div>
+            </div>
+        </div>
+
+        <ul class="icons">
+            <li><a href="https://kaifisahil.substack.com" target="_blank" title="my blog"><ion-icon name="newspaper-outline"></ion-icon></a></li>
+            <li><a href="https://codeberg.org/kaifisahil" target="_blank" title="codeberg"><ion-icon name="prism-outline"></ion-icon></a></li>
+            <li><a href="https://instagram.com/kaifisahil_/" target="_blank" title="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://github.com/kxifi" target="_blank" title="github"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://youtube.com/@kaifisahil" target="_blank" title="youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="mailto: kq.studio@protonmail.com" target="_blank" title="business"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="https://www.ko-fi.com/kaifi" target="_blank" title="ko-fi"><ion-icon name="wallet-outline"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/sahil-mahmood" target="_blank" title="linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://coff.ee/kaifi" target="_blank" title="buy me a coffee"><ion-icon name="cafe-outline"></ion-icon></a></li>
+        </ul>
     </div>
-<ul class="icons">
-    <li><a  target="_blank"><abbr title = "my blog!"><ion-icon name="newspaper-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.codeberg.org/kaifisahil" target="_blank"><abbr title = "Codeberg"><ion-icon name="prism-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.instagram.com/kaaiifii/" target="_blank"><abbr title = "Instagram"><ion-icon name="logo-instagram"></ion-icon></a></abbr></li>
-    <li><a href="https://www.github.com/kxifi" target="_blank"><abbr title = "GitHub"><ion-icon name="logo-github"></ion-icon></a></abbr></li>
-    <li><a href="https://www.youtube.com/@kaifisahil" target="_blank"><abbr title = "YouTube"><ion-icon name="logo-youtube"></ion-icon></a></abbr></li>
-    <li><a href="mailto: pristineparty@protonmail.com" target="_blank"><abbr title = "Contact"><ion-icon name="mail-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.ko-fi.com/kaifi" target="_blank"><abbr title = "Ko-fi"><ion-icon name="wallet-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.linkedin.com/" target="_blank"><abbr title = "LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></abbr></li>
-    <li><a href="https://coff.ee/kaifi" target="_blank"><abbr title = "Buy Me a Coffee!"><ion-icon name="cafe-outline"></ion-icon></a></abbr></li>
-</ul>
-</div>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-</script><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </body> 
 </html>
