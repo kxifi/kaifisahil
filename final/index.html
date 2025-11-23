@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            @kaifisahil
-        </title>
-        <style>
-            ion-icon{
-                font-size: xxx-large;
-            }
+    <title>
+        @kaifisahil
+    </title>
+
+    <style>
         /* --- RESET & BASICS --- */
         *, *::before, *::after {
             box-sizing: border-box;
@@ -24,6 +22,7 @@
             /* The original earthy gradient */
             background: linear-gradient(to bottom right, #c9a066, #8b5e3c, #4b2e2b);
             color: whitesmoke;
+            /* Center content using Flexbox */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,8 +62,10 @@
             flex-direction: column;
             justify-content: flex-end;
             
-            /* Placeholder image used here. Replace URL with 'kxifi.jpg' */
-            background: url('kaifisahil.jpg');
+            /* Dark gradient overlay for text readability + Image */
+            background: 
+                linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), 
+                url('kaifisahil.jpg');
             background-size: cover;
             background-position: center;
             
@@ -129,6 +130,11 @@
             display: block; /* Fixes vertical align issues */
             transition: transform 0.2s ease;
         }
+        
+        /* Original Ionicon size setting from head, slightly reduced here */
+        .icons ion-icon {
+            font-size: 1.8rem; 
+        }
 
         ul.icons li a:hover ion-icon {
             transform: scale(1.2);
@@ -166,10 +172,8 @@
                     <span class="name">Kaifi</span>
                     <span class="verified-twitter" title="Verified">
                         <svg width="27.5" height="27.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!-- Starburst shape -->
-                        <path fill="#1DA1F2" d="M10.521 2.624c.793-.871 2.164-.871 2.957 0l1.02 1.12c.4.441.976.68 1.571.652l1.514-.07c1.177-.055 2.147.914 2.093 2.091l-.07 1.514c-.028.595.19 1.171.632 1.571l1.02 1.02c.871.793.871 2.164 0 2.957l-1.12 1.02c-.441.4-.68.976-.652 1.571l.07 1.514c.055 1.177-.914 2.147-2.091 2.093l-1.514-.07c-.595-.028-1.171.19-1.571.632l-1.02 1.02c-.793.871-2.164.871-2.957 0l-1.02-1.12c-.4-.441-.976-.68-1.571-.652l-1.514.07c-1.177.055-2.147-.914-2.093-2.091l.07-1.514c.028-.595-.19-1.171-.632-1.571l-1.02-1.02c-.871-.793-.871-2.164 0-2.957l1.12-1.02c.441-.4.68-.976.652-1.571l-.07-1.514c-.055-1.177.914-2.147 2.091-2.093l1.514.07c.595.028 1.171-.19 1.571-.632l1.02-1.02z"/>
-<!-- Refined checkmark from Twitter -->
-                        <path d="M10.5 13.5L8.5 11.5L7.75 12.25L10.5 15L16.25 9.25L15.5 8.5L10.5 13.5Z"
+<path fill="#1DA1F2" d="M10.521 2.624c.793-.871 2.164-.871 2.957 0l1.02 1.12c.4.441.976.68 1.571.652l1.514-.07c1.177-.055 2.147.914 2.093 2.091l-.07 1.514c-.028.595.19 1.171.632 1.571l1.02 1.02c.871.793.871 2.164 0 2.957l-1.12 1.02c-.441.4-.68.976-.652 1.571l.07 1.514c.055 1.177-.914 2.147-2.091 2.093l-1.514-.07c-.595-.028-1.171.19-1.571.632l-1.02 1.02c-.793.871-2.164.871-2.957 0l-1.02-1.12c-.4-.441-.976-.68-1.571-.652l-1.514.07c-1.177.055-2.147-.914-2.093-2.091l.07-1.514c.028-.595-.19-1.171-.632-1.571l-1.02-1.02c-.871-.793-.871-2.164 0-2.957l1.12-1.02c.441-.4.68-.976.652-1.571l-.07-1.514c-.055-1.177.914-2.147 2.091-2.093l1.514.07c.595.028 1.171-.19 1.571-.632l1.02-1.02z"/>
+<path d="M10.5 13.5L8.5 11.5L7.75 12.25L10.5 15L16.25 9.25L15.5 8.5L10.5 13.5Z"
                         fill="white"/>
                         </svg>
                     </span>
@@ -185,22 +189,22 @@
                 </div>
             </div>
         </div>
-<ul class="icons">
-    <li><a  target="_blank"><abbr title = "my blog!"><ion-icon name="newspaper-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.codeberg.org/kaifisahil" target="_blank"><abbr title = "Codeberg"><ion-icon name="prism-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.instagram.com/kaaiifii/" target="_blank"><abbr title = "Instagram"><ion-icon name="logo-instagram"></ion-icon></a></abbr></li>
-    <li><a href="https://www.github.com/kxifi" target="_blank"><abbr title = "GitHub"><ion-icon name="logo-github"></ion-icon></a></abbr></li>
-    <li><a href="https://www.youtube.com/@kaifisahil" target="_blank"><abbr title = "YouTube"><ion-icon name="logo-youtube"></ion-icon></a></abbr></li>
-    <li><a href="mailto: kq.studio@protonmail.com" target="_blank"><abbr title = "Contact"><ion-icon name="mail-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.ko-fi.com/kaifi" target="_blank"><abbr title = "Ko-fi"><ion-icon name="wallet-outline"></ion-icon></a></abbr></li>
-    <li><a href="https://www.linkedin.com/in/sahil-mahmood" target="_blank"><abbr title = "LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></abbr></li>
-    <li><a href="https://coff.ee/kaifi" target="_blank"><abbr title = "Buy Me a Coffee!"><ion-icon name="cafe-outline"></ion-icon></a></abbr></li>
-    <li><a rel="me" href="https://ieji.de/@kq" target="_blank"><abbr title = "Mastodon"><ion-icon name="logo-mastodon"></ion-icon></a></abbr></li>
-</ul>
-</div>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-</script><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <ul class="icons">
+            <li><a  target="_blank"><abbr title = "my blog!"><ion-icon name="newspaper-outline"></ion-icon></a></abbr></li>
+            <li><a href="https://www.codeberg.org/kaifisahil" target="_blank"><abbr title = "Codeberg"><ion-icon name="prism-outline"></ion-icon></a></abbr></li>
+            <li><a href="https://www.instagram.com/kaaiifii/" target="_blank"><abbr title = "Instagram"><ion-icon name="logo-instagram"></ion-icon></a></abbr></li>
+            <li><a href="https://www.github.com/kxifi" target="_blank"><abbr title = "GitHub"><ion-icon name="logo-github"></ion-icon></a></abbr></li>
+            <li><a href="https://www.youtube.com/@kaifisahil" target="_blank"><abbr title = "YouTube"><ion-icon name="logo-youtube"></ion-icon></a></abbr></li>
+            <li><a href="mailto: kq.studio@protonmail.com" target="_blank"><abbr title = "Contact"><ion-icon name="mail-outline"></ion-icon></a></abbr></li>
+            <li><a href="https://www.ko-fi.com/kaifi" target="_blank"><abbr title = "Ko-fi"><ion-icon name="wallet-outline"></ion-icon></a></abbr></li>
+            <li><a href="https://www.linkedin.com/in/sahil-mahmood" target="_blank"><abbr title = "LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></abbr></li>
+            <li><a href="https://coff.ee/kaifi" target="_blank"><abbr title = "Buy Me a Coffee!"><ion-icon name="cafe-outline"></ion-icon></a></abbr></li>
+            <li><a rel="me" href="https://ieji.de/@kq" target="_blank"><abbr title = "Mastodon"><ion-icon name="logo-mastodon"></ion-icon></a></abbr></li>
+        </ul>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body> 
 </html>
